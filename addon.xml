@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.youtube-rss" name="Youtube RSS" version="0.0.6" provider-name="Jelle van der Waa">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.routing" version="0.2.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/addon_entry.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">RSS Youtube plugins</summary>
+        <description lang="en_GB"></description>
+        <language>en</language>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <license>MIT</license>
+        <website>https://youtube.com</website>
+        <email>jelle@vdwaa.nl</email>
+        <source>https://github.com/jelly/plugin.video.youtube-rss</source>
+	<news>
+	</news>
+        <disclaimer lang="en_GB">Unofficial Addon - Use at your own risk</disclaimer>
+        <assets>
+        </assets>
+    </extension>
+</addon>

@@ -22,7 +22,7 @@ FEEDS = json.load(open(feedfile))
 
 @plugin.route('/')
 def main_menu():
-    for name, url in FEEDS.items():
+    for name, url in sorted(FEEDS.items()):
         url = plugin.url_for(show_dir, subdir=name)
         addDirectoryItem(plugin.handle, url, ListItem(name), True)
     setContent(plugin.handle, 'videos')
